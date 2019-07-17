@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { MyHeroComponent } from './my-hero/my-hero.component';
+import { SizerComponent } from './sizer/sizer.component';
 
 @NgModule({
 	imports: [
@@ -23,7 +24,8 @@ import { MyHeroComponent } from './my-hero/my-hero.component';
 			{ path: 'products/:productId', component: ProductDetailsComponent },
 			{ path: 'cart', component: CartComponent },
 			{ path: 'shipping', component: ShippingComponent },
-			{ path: 'hero', component: MyHeroComponent }
+			{ path: 'hero', component: MyHeroComponent },
+			{ path: 'sizer', component: SizerComponent}
 		])
 	],
 	declarations: [
@@ -34,7 +36,8 @@ import { MyHeroComponent } from './my-hero/my-hero.component';
 		ProductDetailsComponent,
 		CartComponent,
 		ShippingComponent,
-		MyHeroComponent
+		MyHeroComponent,
+		SizerComponent
 	],
 	bootstrap: [
 		AppComponent
