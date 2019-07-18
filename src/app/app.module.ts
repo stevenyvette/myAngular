@@ -13,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { MyHeroComponent } from './my-hero/my-hero.component';
 import { SizerComponent } from './sizer/sizer.component';
+import { HeroVoterComponent } from './hero-voter/hero-voter.component';
 
 @NgModule({
 	imports: [
@@ -25,8 +26,16 @@ import { SizerComponent } from './sizer/sizer.component';
 			{ path: 'cart', component: CartComponent },
 			{ path: 'shipping', component: ShippingComponent },
 			{ path: 'hero', component: MyHeroComponent },
-			{ path: 'sizer', component: SizerComponent}
+			{ path: 'sizer', component: SizerComponent }
 		])
+		/* RouterModule.forRoot([
+			{ path: '', component: ProductListComponent },
+			{ path: 'products/:productId', component: ProductDetailsComponent },
+			{ path: 'cart', component: CartComponent },
+			{ path: 'shipping', component: ShippingComponent },
+			{ path: 'hero', component: MyHeroComponent },
+			{ path: 'sizer', component: SizerComponent}
+		]) */
 	],
 	declarations: [
 		AppComponent,
@@ -37,7 +46,8 @@ import { SizerComponent } from './sizer/sizer.component';
 		CartComponent,
 		ShippingComponent,
 		MyHeroComponent,
-		SizerComponent
+      SizerComponent,
+      HeroVoterComponent
 	],
 	bootstrap: [
 		AppComponent

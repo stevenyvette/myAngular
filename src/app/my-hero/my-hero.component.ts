@@ -12,6 +12,13 @@ export class MyHeroComponent implements OnInit {
 	heroes: Array<Hero>;
 	myHero: Hero;
 
+	agreed = 0;
+	disagreed = 0;
+
+	onVoted(agreed: boolean) {
+		agreed ? this.agreed++ : this.disagreed++;
+	}
+
 	constructor() {
 		this.title = 'Tour of Heros';
 		this.heroes = [
